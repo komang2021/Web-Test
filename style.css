@@ -1,0 +1,162 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Warna latar belakang navbar menjadi putih */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-brand .logo-part1 {
+    color: #6f4e37; /* Warna kopi */
+}
+.navbar-brand .logo-part2 {
+    color: #000000; /* Warna teks logo menjadi hitam */
+}
+.navbar-nav .nav-link {
+    color: #000000; /* Warna teks navbar menjadi hitam */
+}
+.navbar-nav .nav-link:hover {
+    color: #4f8cff;
+}
+
+/* Hamburger Menu */
+.navbar-toggler {
+    background-color: #6f4e37; /* Warna tombol hamburger menjadi warna kopi */
+    border: none; /* Hilangkan border dari tombol hamburger */
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Ganti garis-garis hamburger menjadi putih */
+}
+
+/* Dark Mode Switch */
+.dark-mode-switch {
+    color: #000000; /* Warna switch diubah menjadi hitam untuk menyesuaikan dengan navbar putih */
+    cursor: pointer;
+}
+
+/* Jumbotron */
+.jumbotron {
+    margin-top: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.jumbotron img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card Section */
+.card-section {
+    margin: 40px 20px;
+}
+.card-section h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+}
+.scroll-container .card {
+    background-color: #2b2b2b;
+    border: none;
+    color: #ffffff;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.scroll-container .card h5 {
+    color: #ffffff;
+}
+.scroll-container .card iframe {
+    border-radius: 10px;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #4f4f4f;
+    margin: 40px 0;
+}
+
+/* Promo Menjadi Kreator Bstation */
+.promo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.promo-card {
+    background-color: #2b2b2b;
+    border: none;
+    color: #ffffff;
+    margin: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+.promo-card h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.promo-card p {
+    color: #b0b0b0;
+}
+.promo-prev, .promo-next {
+    background-color: #4f8cff;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.promo-prev:hover, .promo-next:hover {
+    background-color: #366fcc;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #101010;
+    color: #e0e0e0;
+}
+.dark-mode .navbar {
+    background-color: #181818;
+}
+.dark-mode .navbar-brand .logo-part1 {
+    color: #8a5e48; /* Warna kopi sedikit lebih terang */
+}
+.dark-mode .navbar-brand .logo-part2, 
+.dark-mode .navbar-nav .nav-link {
+    color: #ffffff; /* Warna teks navbar dalam mode gelap menjadi putih */
+}
+.dark-mode .navbar-toggler {
+    background-color: #8a5e48; /* Tombol hamburger menjadi warna kopi terang dalam mode gelap */
+}
+.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Ganti garis-garis hamburger menjadi putih dalam mode gelap */
+}
+.dark-mode .scroll-container .card {
+    background-color: #212121;
+}
+.dark-mode .promo-card {
+    background-color: #212121;
+}
